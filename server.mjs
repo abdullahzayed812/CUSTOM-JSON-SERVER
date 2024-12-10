@@ -10,6 +10,38 @@ server.use(middlewares);
 // Enable JSON parsing for POST and PUT requests
 server.use(jsonServer.bodyParser);
 
+server.patch("/projects/:projectId", (req, res) => {
+  const { projectId } = req.params;
+  const project = router.db.get("projects").find({ id: projectId }).value();
+
+  if (project) {
+    project.logo = req.body.logo;
+    router.db.write();
+  } else {
+    res.status(404).json({ error: "Project logo not found" });
+  }
+});
+
+// server.get("/default-templates", (req, res) => {
+//   const templates = router.db.get("default-templates");
+
+//   if (templates.length > 0) {
+//     res.status(200).json(templates);
+//   } else {
+//     res.status(404).json({ error: "Default templates not found"});
+//   }
+// });
+
+// server.get("/default-customized-templates", (req, res) => {
+//   const templates = router.db.get("default-customized-templates");
+
+//   if (templates.length > 0) {
+//     res.status(200).json(templates);
+//   } else {
+//     res.status(404).json({ error: "Default templates not found"});
+//   }
+// });
+
 // Custom route to get all images of a specific project
 server.get("/projects/:projectId/images", (req, res) => {
   const { projectId } = req.params;
@@ -139,9 +171,7 @@ server.delete("/projects/:projectId/templates/:templateId", (req, res) => {
   // Find the project and remove the template
   const project = router.db.get("projects").find({ id: projectId }).value();
   if (project) {
-    const templateIndex = project.templates.findIndex(
-      (tmpl) => tmpl.id === templateId
-    );
+    const templateIndex = project.templates.findIndex((tmpl) => tmpl.id === templateId);
     if (templateIndex !== -1) {
       project.templates.splice(templateIndex, 1); // Remove the template
       router.db.write();
@@ -184,56 +214,46 @@ server.post("/projects/:projectId/customized-templates", (req, res) => {
 });
 
 // Custom route for updating a customized template in a project
-server.patch(
-  "/projects/:projectId/customized-templates/:templateId",
-  (req, res) => {
-    const { projectId, templateId } = req.params;
-    const updatedTemplate = req.body;
+server.patch("/projects/:projectId/customized-templates/:templateId", (req, res) => {
+  const { projectId, templateId } = req.params;
+  const updatedTemplate = req.body;
 
-    // Find the project by ID
-    const project = router.db.get("projects").find({ id: projectId }).value();
-    if (project) {
-      const template = project["customized-templates"].find(
-        (tmpl) => tmpl.id === templateId
-      );
-      if (template) {
-        // Update the customized template with the new data
-        Object.assign(template, updatedTemplate);
-        router.db.write();
-        res.status(200).json(template);
-      } else {
-        res.status(404).json({ error: "Customized Template not found" });
-      }
+  // Find the project by ID
+  const project = router.db.get("projects").find({ id: projectId }).value();
+  if (project) {
+    const template = project["customized-templates"].find((tmpl) => tmpl.id === templateId);
+    if (template) {
+      // Update the customized template with the new data
+      Object.assign(template, updatedTemplate);
+      router.db.write();
+      res.status(200).json(template);
     } else {
-      res.status(404).json({ error: "Project not found" });
+      res.status(404).json({ error: "Customized Template not found" });
     }
+  } else {
+    res.status(404).json({ error: "Project not found" });
   }
-);
+});
 
 // Custom route for deleting a customized template in a project
-server.delete(
-  "/projects/:projectId/customized-templates/:templateId",
-  (req, res) => {
-    const { projectId, templateId } = req.params;
+server.delete("/projects/:projectId/customized-templates/:templateId", (req, res) => {
+  const { projectId, templateId } = req.params;
 
-    // Find the project and remove the customized template
-    const project = router.db.get("projects").find({ id: projectId }).value();
-    if (project) {
-      const templateIndex = project["customized-templates"].findIndex(
-        (tmpl) => tmpl.id === templateId
-      );
-      if (templateIndex !== -1) {
-        project["customized-templates"].splice(templateIndex, 1); // Remove the customized template
-        router.db.write();
-        res.status(204).end();
-      } else {
-        res.status(404).json({ error: "Customized Template not found" });
-      }
+  // Find the project and remove the customized template
+  const project = router.db.get("projects").find({ id: projectId }).value();
+  if (project) {
+    const templateIndex = project["customized-templates"].findIndex((tmpl) => tmpl.id === templateId);
+    if (templateIndex !== -1) {
+      project["customized-templates"].splice(templateIndex, 1); // Remove the customized template
+      router.db.write();
+      res.status(204).end();
     } else {
-      res.status(404).json({ error: "Project not found" });
+      res.status(404).json({ error: "Customized Template not found" });
     }
+  } else {
+    res.status(404).json({ error: "Project not found" });
   }
-);
+});
 
 // Use default router to handle other CRUD operations
 server.use(router);
