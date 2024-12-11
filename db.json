@@ -65,7 +65,7 @@
             "translateX": 0.05,
             "translateY": 0.3
           },
-          "isSelected": true
+          "isSelected": false
         },
         {
           "id": "2",
@@ -124,7 +124,7 @@
             "translateY": 0.3,
             "language": "en"
           },
-          "isSelected": true
+          "isSelected": false
         },
         {
           "id": "4",
@@ -183,12 +183,12 @@
             "translateY": 0.82,
             "language": "en"
           },
-          "isSelected": true
+          "isSelected": false
         },
         {
           "id": "5",
           "name": "",
-          "frameSvg": "<svg width='1080' height='1080' viewBox='0 0 1080 1080' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='90.5' y='771.5' width='898' height='220' fill='black' fill-opacity='0.5' stroke='white' stroke-width='3'/></svg>",
+          "frameSvg": "<svg width=\"1080\" height=\"1080\" viewBox=\"0 0 1080 1080\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"90.5\" y=\"771.5\" width=\"898\" height=\"220\" fill=\"black\" fill-opacity=\"0.5\" stroke=\"white\" stroke-width=\"3\"/></svg>",
           "defaultPrimary": "#e96c3f",
           "defaultSecondary": "",
           "headline": {
@@ -241,12 +241,13 @@
             "translateX": 0.43,
             "translateY": 0.86,
             "language": "en"
-          }
+          },
+          "isSelected": false
         },
         {
           "id": "6",
           "name": "",
-          "frameSvg": "<svg width='1080' height='1080' viewBox='0 0 1080 1080' fill='none' xmlns='http://www.w3.org/2000/svg'>n<rect x='97.5' y='263.5' width='885' height='553' rx='15.5' fill='black' fill-opacity='0.45' stroke='white' stroke-width='3'/>n</svg>",
+          "frameSvg": "<svg width=\"1080\" height=\"1080\" viewBox=\"0 0 1080 1080\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"97.5\" y=\"263.5\" width=\"885\" height=\"553\" rx=\"15.5\" fill=\"black\" fill-opacity=\"0.45\" stroke=\"white\" stroke-width=\"3\"/></svg>",
           "defaultPrimary": "#e96c3f",
           "defaultSecondary": "",
           "headline": {
@@ -299,12 +300,13 @@
             "translateX": 0.43,
             "translateY": 0.73,
             "language": "en"
-          }
+          },
+          "isSelected": false
         },
         {
           "id": "7",
           "name": "",
-          "frameSvg": "<svg width='1080' height='1080' viewBox='0 0 1080 1080' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='33.5' y='33.5' width='1013' height='1013' fill='url(#paint0_linear_162_94)' style='mix-blend-mode:multiply'/><rect x='33.5' y='33.5' width='1013' height='1013' stroke='white' stroke-width='3'/><defs><linearGradient id='paint0_linear_162_94' x1='540' y1='32' x2='540' y2='1048' gradientUnits='userSpaceOnUse'><stop stop-color='#737373'/><stop offset='1' stop-color='#D9D9D9' stop-opacity='0'/></linearGradient></defs></svg>",
+          "frameSvg": "<svg width=\"1080\" height=\"1080\" viewBox=\"0 0 1080 1080\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"33.5\" y=\"33.5\" width=\"1013\" height=\"1013\" fill=\"url(#paint0_linear_162_94)\" style=\"mix-blend-mode:multiply\"/><rect x=\"33.5\" y=\"33.5\" width=\"1013\" height=\"1013\" stroke=\"white\" stroke-width=\"3\"/><defs><linearGradient id=\"paint0_linear_162_94\" x1=\"540\" y1=\"32\" x2=\"540\" y2=\"1048\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#737373\"/><stop offset=\"1\" stop-color=\"#D9D9D9\" stop-opacity=\"0\"/></linearGradient></defs></svg>",
           "defaultPrimary": "#e96c3f",
           "defaultSecondary": "",
           "headline": {
@@ -357,7 +359,8 @@
             "translateX": 0.16,
             "translateY": 0.87,
             "language": "en"
-          }
+          },
+          "isSelected": false
         }
       ],
       "customized-templates": [
@@ -420,7 +423,7 @@
         {
           "id": "1-2",
           "name": "",
-          "frameSvg": "<svg width=\"1080\" height=\"1080\" viewBox=\"0 0 1080 1080\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 566L1080 338.5V0H0V566Z\" hasPrimary=\"true\" fill=\"#2196f3\"/><path d=\"M616 433L1080 333.5V379.5L616 433Z\" fill=\"#B9512A\"/><path d=\"M607 437L1080 334V536L607 437Z\" hasSecondary=\"true\" fill=\"#EB6E40\"/></svg>",
+          "frameSvg": "<svg width=\"1080\" height=\"1080\" viewBox=\"0 0 1080 1080\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 566L1080 338.5V0H0V566Z\" hasPrimary=\"true\" fill=\"#074A76\"/><path d=\"M616 433L1080 333.5V379.5L616 433Z\" fill=\"#B9512A\"/><path d=\"M607 437L1080 334V536L607 437Z\" hasSecondary=\"true\" fill=\"#EB6E40\"/></svg>",
           "defaultPrimary": "#074A76",
           "defaultSecondary": "#EB6E40",
           "headline": {
@@ -479,7 +482,7 @@
         {
           "id": "1-4",
           "name": "",
-          "frameSvg": "<svg width='1080' height='1080' viewBox='0 0 1080 1080' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M32 37.5H872C963.127 37.5 1037 111.373 1037 202.5V1042.5H197C105.873 1042.5 32 968.627 32 877.5V37.5Z' stroke='white' stroke-width='3'/><path d='M428 574H884C939.228 574 984 618.772 984 674V1001H528C472.772 1001 428 956.228 428 901V574Z' fill='#D9D9D9' fill-opacity='0.84'/></svg>",
+          "frameSvg": "<svg width=\"1080\" height=\"1080\" viewBox=\"0 0 1080 1080\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M32 37.5H872C963.127 37.5 1037 111.373 1037 202.5V1042.5H197C105.873 1042.5 32 968.627 32 877.5V37.5Z\" stroke=\"white\" stroke-width=\"3\"/><path d=\"M428 574H884C939.228 574 984 618.772 984 674V1001H528C472.772 1001 428 956.228 428 901V574Z\" fill=\"#D9D9D9\" fill-opacity=\"0.84\"/></svg>",
           "defaultPrimary": "#e96c3f",
           "defaultSecondary": "#133272",
           "headline": {
@@ -538,7 +541,7 @@
         {
           "id": "1-5",
           "name": "",
-          "frameSvg": "<svg width='1080' height='1080' viewBox='0 0 1080 1080' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='90.5' y='771.5' width='898' height='220' fill='black' fill-opacity='0.5' stroke='white' stroke-width='3'/></svg>",
+          "frameSvg": "<svg width=\"1080\" height=\"1080\" viewBox=\"0 0 1080 1080\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"90.5\" y=\"771.5\" width=\"898\" height=\"220\" fill=\"black\" fill-opacity=\"0.5\" stroke=\"white\" stroke-width=\"3\"/></svg>",
           "defaultPrimary": "#e96c3f",
           "defaultSecondary": "",
           "headline": {
@@ -597,7 +600,7 @@
         {
           "id": "1-6",
           "name": "",
-          "frameSvg": "<svg width='1080' height='1080' viewBox='0 0 1080 1080' fill='none' xmlns='http://www.w3.org/2000/svg'>n<rect x='97.5' y='263.5' width='885' height='553' rx='15.5' fill='black' fill-opacity='0.45' stroke='white' stroke-width='3'/>n</svg>",
+          "frameSvg": "<svg width=\"1080\" height=\"1080\" viewBox=\"0 0 1080 1080\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"97.5\" y=\"263.5\" width=\"885\" height=\"553\" rx=\"15.5\" fill=\"black\" fill-opacity=\"0.45\" stroke=\"white\" stroke-width=\"3\"/></svg>",
           "defaultPrimary": "#e96c3f",
           "defaultSecondary": "",
           "headline": {
@@ -656,7 +659,7 @@
         {
           "id": "1-7",
           "name": "",
-          "frameSvg": "<svg width='1080' height='1080' viewBox='0 0 1080 1080' fill='none' xmlns='http://www.w3.org/2000/svg'><rect x='33.5' y='33.5' width='1013' height='1013' fill='url(#paint0_linear_162_94)' style='mix-blend-mode:multiply'/><rect x='33.5' y='33.5' width='1013' height='1013' stroke='white' stroke-width='3'/><defs><linearGradient id='paint0_linear_162_94' x1='540' y1='32' x2='540' y2='1048' gradientUnits='userSpaceOnUse'><stop stop-color='#737373'/><stop offset='1' stop-color='#D9D9D9' stop-opacity='0'/></linearGradient></defs></svg>",
+          "frameSvg": "<svg width=\"1080\" height=\"1080\" viewBox=\"0 0 1080 1080\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"33.5\" y=\"33.5\" width=\"1013\" height=\"1013\" fill=\"url(#paint0_linear_162_94)\" style=\"mix-blend-mode:multiply\"/><rect x=\"33.5\" y=\"33.5\" width=\"1013\" height=\"1013\" stroke=\"white\" stroke-width=\"3\"/><defs><linearGradient id=\"paint0_linear_162_94\" x1=\"540\" y1=\"32\" x2=\"540\" y2=\"1048\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#737373\"/><stop offset=\"1\" stop-color=\"#D9D9D9\" stop-opacity=\"0\"/></linearGradient></defs></svg>",
           "defaultPrimary": "#e96c3f",
           "defaultSecondary": "",
           "headline": {
