@@ -6,6 +6,17 @@
       "description": "The Palm Hills VGK (Village Gardens Katameya) in New Cairo is a luxurious residential project by Palm Hills Developments. ",
       "website": "www.palmhills.com",
       "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAASjSURBVHgBxVhLSCRXFD3daht1HDv4xd8UkskqhBGjKBjiLJNNssgiIwQVBlcuHAKBrHSSRchCZiJZKISMbmxchHwQg4skjvGLGkUF/9jaBtHWdI//9le55zHVaaXRrvYzB4pXdd+r907de9+995UFJjEyMmI/Pj4u0XX9nsViuRPQ9UJkTmlH8/PzO2ESllAGcfGjo6NyWfjDiIiIklu3biE2NhbR0dH+MdKPg4MD7O7uYnt7m6ImIdYcKqkLiQwPD5fLhE9kcXt6ejri4+MvegU+nw9bW1tYWVkhuc7Dw8OKoqIiJ8IhIlrQxATPhEBJqASCYX19XRESMrV5eXmPYYYISZycnPyZnJysZWVl4bKghhYXF6mln8W0Fbm5ud4LiRgksrOztaSkJFwlXC4X1tbWRoXM/bNkrMFIZGRkXDkJgtpNTEy8JyZ/crbvFBEZUJuWlqalpqbiukAysuPKBwcHq4MO4O4YGxvTbwL7+/u6aN/DsIAgGqnRNA03AcaflJQUBsZaBBKhNuLi4rRwtqjuO0Q4oPnFacsMrSgioq0ycSKYxcnuPhY/qIL7cQPMQkjQcVXEVkTIiGHb7C4hCdfHn8M35YL7yx/g/vp7mIXdbgfTBu8jmcCYO8zC9ckX2OufwGvvvAG8lYmNbxyw2KKR9NmnIc/BfCUooTKszKJmfeOF4zfs/vE3ou6mIab4bdjupiMi/TbWv2rGsWcz5HloHpKR8K9Fimq0wCwaChIevA/f9D/wNPyIoxUvtn7thuU4Cnd+/w4Rr982NZfNZoPVatUiESZSah+KfYF/nzpglcm0vxphezMbZkGtSDS3h02ESK55CGtCHGLfzQ2LRCAuRYRIrH6Ay4DFlJjGS2cdZVX1qiC7lqZxWsVZnXt7e/6Onp4e1NXVYWBgAB6PBw6HQ8lbW1tVKy+hvb1dVWDd3d1KxvS+sLCAjo4OTExMqKutrU319fb2Ynl5Wd3X19f75QYJKqGgoGA0Upylkw8U0nHcbrdapL+/X01OMnyenp5WL1PW2NiIyclJ1VdcXAyv16tk/KDKykoln5+fV+M3NjYQExODzMxMtejOzo6fCJ/FIs95b2WBIiQ6A81TWFiIqqoqdHV1YXNzU7Us+RoaGjA3N4eKigpI9YbIyP9drLS0VL1HjRFTU1NoaWnxa3N2dhYJCQmseVTFZpAUIk3+SYaGhj6SL1YpWkipi5A84G95yQS6BB9dFlNy3hN8Zr/xzFacUKV7zsWWMkNOcC5ZV+/r69NOOY1k4AX5ev2mIH5FIs+M9f31iPQ9MpzqusEtu7q66hQNBa/qheFPS0tL+nVjfHxcP1sqnqpZWerLrnFKpY3rAo8V4h/fygnw6bkDWcnTX0R1+lXD6XTSL0aCrWs9K5Dt7JSQe1/8xckT2lWAPjEzM8MQ0MwzTbAxFx05a6VEKMvJyTGKGNOgmV8eOR+dZ46QDuHS1EgVp0nlrcq7i8AozWBFEhJDnotVqhnGz3snpN8SBiEJXOVRUVHvMWSzvGRkZVowFmfEZJiXlOCVsb9IHmu6st8SZxH4o0YuzZAzlesvf9QIwdFgB+3z8B/WJltSIhoshwAAAABJRU5ErkJggg==",
+      "branding": {
+        "colors": {
+          "primary-color": "",
+          "secondary-color": "",
+          "additional-color": ""
+        },
+        "fonts": {
+          "primary-font": "",
+          "secondary-font": ""
+        }
+      },
       "images": [],
       "templates": [
         {
@@ -65,7 +76,7 @@
             "translateX": 0.05,
             "translateY": 0.3
           },
-          "isSelected": false
+          "isSelected": true
         },
         {
           "id": "2",
@@ -124,7 +135,7 @@
             "translateY": 0.3,
             "language": "en"
           },
-          "isSelected": false
+          "isSelected": true
         },
         {
           "id": "4",
@@ -183,7 +194,7 @@
             "translateY": 0.82,
             "language": "en"
           },
-          "isSelected": false
+          "isSelected": true
         },
         {
           "id": "5",

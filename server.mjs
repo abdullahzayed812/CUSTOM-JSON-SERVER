@@ -22,25 +22,62 @@ server.patch("/projects/:projectId", (req, res) => {
   }
 });
 
-// server.get("/default-templates", (req, res) => {
-//   const templates = router.db.get("default-templates");
+// Custom route to get branding colors
+server.get("/projects/:projectId/branding/colors", (req, res) => {
+  const { projectId } = req.params;
+  const project = router.db.get("projects").find({ id: projectId }).value();
 
-//   if (templates.length > 0) {
-//     res.status(200).json(templates);
-//   } else {
-//     res.status(404).json({ error: "Default templates not found"});
-//   }
-// });
+  if (project) {
+    res.status(200).json(project.branding.colors);
+  } else {
+    res.status(404).json({ error: "Project not found " });
+  }
+});
 
-// server.get("/default-customized-templates", (req, res) => {
-//   const templates = router.db.get("default-customized-templates");
+// Custom route to patch branding colors
+server.patch("/projects/:projectId/branding/colors", (req, res) => {
+  const { projectId } = req.params;
+  const updatedColors = req.body.brandingColors;
 
-//   if (templates.length > 0) {
-//     res.status(200).json(templates);
-//   } else {
-//     res.status(404).json({ error: "Default templates not found"});
-//   }
-// });
+  const project = router.db.get("projects").find({ id: projectId }).value();
+  if (project) {
+    const colors = project.branding.colors;
+    if (colors) {
+      Object.assign(colors, updatedColors);
+      router.db.write();
+      res.status(200).json(colors);
+    } else {
+      res.status(404).json({ error: "Branding colors not found" });
+    }
+  } else {
+    res.status(404).json({ error: "Project not found " });
+  }
+});
+
+// Custom router to get branding fonts
+server.get("/projects/:projectId/branding/fonts", (req, res) => {
+  const { projectId } = req.params;
+  const project = router.db.get("projects").find({ id: projectId }).value();
+
+  if (project) {
+    res.status(200).json(project.branding.fonts);
+  } else {
+    res.status(404).json({ error: "Project not found " });
+  }
+});
+
+// Custom route to patch branding fonts
+server.patch("/projects/:projectId/branding/fonts", (req, res) => {
+  const { projectId } = req.params;
+  const project = router.db.get("projects").find({ id: projectId }).value();
+
+  if (project) {
+    project.branding.fonts = req.body;
+    router.db.write();
+  } else {
+    res.status(404).json({ error: "Project not found " });
+  }
+});
 
 // Custom route to get all images of a specific project
 server.get("/projects/:projectId/images", (req, res) => {
